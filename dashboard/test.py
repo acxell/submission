@@ -7,8 +7,8 @@ import seaborn as sns
 st.title("Air Quality Data Analysis")
 st.write("This app provides an analysis of air quality data from different stations with filtering options for pollutants and stations.")
 
-changping_df = pd.read_csv('data/Changping.csv')
-shunyi_df = pd.read_csv('data/Shunyi.csv')
+changping_df = pd.read_csv("data/Changping.csv")
+shunyi_df = pd.read_csv("data/Shunyi.csv")
 
 pollutants = ['PM2.5', 'PM10', 'SO2', 'NO2', 'CO', 'O3']
 station = st.selectbox("Select Station", ["Changping", "Shunyi"])
